@@ -1,7 +1,6 @@
 from django.urls import path
-from .views import Create, listfunc
+from . import views
 
 urlpatterns = [
-   path('', Create.as_view(), name='home'),
-   path('list/', listfunc, name='list'),
+   path('', views.index),
 ]
